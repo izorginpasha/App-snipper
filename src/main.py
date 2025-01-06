@@ -12,46 +12,13 @@ import atexit
 from contextlib import asynccontextmanager
 from typing import AsyncContextManager
 from sqlalchemy.ext.asyncio import AsyncSession
+from fastapi.responses import JSONResponse
 
-router = APIRouter()
+
 
 logger = logging.getLogger("root")
 
 # экземпляр роутера - метод - путь
-@router.get("/path", response_model=MyGetFuncResponseSchema)
-def my_get_func():
-    return {
-        "app_name": "MyAPP",
-        "number_of_months": 12,
-        "pi": 3.14
-    }
-
-
-@router.post("/path", response_model=UserResponse)
-async def my_post_func(user_id: int, db: AsyncSession = Depends(db_dependency)):
-    query = await db.execute(select(User).filter(User.id == user_id))
-    user = query.scalar_one_or_none()
-    if not user:
-        raise HTTPException(status_code=404, detail="User not found")
-    return UserResponse.from_orm(user)
-
-@router.put("/path")
-def my_put_func():
-    pass
-
-
-@router.delete("/path")
-def my_delete_func():
-    pass
-
-
-@router.get('/ping')
-async def ping(db: db_dependency):
-    try:
-        await db.execute(text("SELECT 1"))
-        return True
-    except Exception:
-        return False
 
 
 @asynccontextmanager
@@ -78,7 +45,7 @@ app = FastAPI(
     docs_url="/api/openapi"
 )
 
-app.include_router(router)
+
 app.include_router(api_router)
 
 

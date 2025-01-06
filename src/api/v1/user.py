@@ -9,19 +9,18 @@ from fastapi import BackgroundTasks
 user_router = APIRouter(prefix="/user", tags=['user'])
 
 
-@user_router.get("/{user_id}")
-async def get_user(user_id: int):
-    # Открываем асинхронное соединение с помощью httpx
-    async with httpx.AsyncClient(base_url='https://jsonplaceholder.typicode.com') as client:
-        # Отправляем GET-запрос для получения данных по конкретному пользователю
-        response = await client.get(f'/users/{user_id}')
-        if response.status_code != 200:
-            raise HTTPException(
-                status_code=response.status_code,
-                detail="Unable to fetch user data from external service"
-            )
-        # Возвращаем данные, полученные в формате JSON
-        return response.json()
+@user_router.get("/{user_id}", dependencies=[Depends(has_role(["admin"]))])
+async def get_user(user_id: int, db: db_dependency):
+    # Выполняем запрос к базе данных
+    result = await db.execute(select(User).where(User.id == user_id))
+    user = result.scalars().first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    return {
+        "id": user.id,
+        "name": user.name,
+        "email": user.email,
+    }
 
 
 @user_router.post("/register")

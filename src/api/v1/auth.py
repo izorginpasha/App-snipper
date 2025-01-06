@@ -37,6 +37,7 @@ async def token(form_data: Annotated[OAuth2PasswordRequestForm, Depends()],
    if not user:
        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,
                            detail="Could not validate user.")
+
    access_token = create_access_token(
        data={"sub": user.email, "role": user.role.name.value}
    )

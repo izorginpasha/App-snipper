@@ -10,9 +10,9 @@ class AppSettings(BaseSettings):
     reload: bool = True
     cpu_count: int | None = None
     postgres_dsn: PostgresDsn = MultiHostUrl(
-        'postgresql+asyncpg://postgres:admin@127.0.0.1/dbapi')
-    jwt_secret: str = "your_super_secret"  # Добавьте эту переменную
-    algorithm: str = "HS256"  # И эту переменную
+        'postgresql+asyncpg://postgres:admin@127.0.0.1/snipper')
+    jwt_secret: str = "your_super_secret"
+    algorithm: str = "HS256"
 
     class Config:
         _env_file = ".env"

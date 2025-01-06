@@ -1,0 +1,50 @@
+[DEBUG|multipart|L627] 2025-01-06T20:24:02+0500: Calling on_end with no data
+[DEBUG|multipart|L627] 2025-01-06T20:24:29+0500: Calling on_field_start with no data
+[DEBUG|multipart|L624] 2025-01-06T20:24:29+0500: Calling on_field_name with data[0:10]
+[DEBUG|multipart|L624] 2025-01-06T20:24:29+0500: Calling on_field_data with data[11:19]
+[DEBUG|multipart|L627] 2025-01-06T20:24:29+0500: Calling on_field_end with no data
+[DEBUG|multipart|L627] 2025-01-06T20:24:29+0500: Calling on_field_start with no data
+[DEBUG|multipart|L624] 2025-01-06T20:24:29+0500: Calling on_field_name with data[20:28]
+[DEBUG|multipart|L624] 2025-01-06T20:24:29+0500: Calling on_field_data with data[29:48]
+[DEBUG|multipart|L627] 2025-01-06T20:24:29+0500: Calling on_field_end with no data
+[DEBUG|multipart|L627] 2025-01-06T20:24:29+0500: Calling on_field_start with no data
+[DEBUG|multipart|L624] 2025-01-06T20:24:29+0500: Calling on_field_name with data[49:57]
+[DEBUG|multipart|L624] 2025-01-06T20:24:29+0500: Calling on_field_data with data[58:61]
+[DEBUG|multipart|L627] 2025-01-06T20:24:29+0500: Calling on_field_end with no data
+[DEBUG|multipart|L627] 2025-01-06T20:24:29+0500: Calling on_end with no data
+[ERROR|main|L62] 2025-01-06T20:24:41+0500: http://localhost:8000/snippets/1 | Error in application: 'role'
+[ERROR|main|L62] 2025-01-06T20:32:16+0500: http://localhost:8000/snippets/1 | Error in application: 'role'
+[DEBUG|multipart|L627] 2025-01-06T20:41:57+0500: Calling on_field_start with no data
+[DEBUG|multipart|L624] 2025-01-06T20:41:57+0500: Calling on_field_name with data[0:10]
+[DEBUG|multipart|L624] 2025-01-06T20:41:57+0500: Calling on_field_data with data[11:19]
+[DEBUG|multipart|L627] 2025-01-06T20:41:57+0500: Calling on_field_end with no data
+[DEBUG|multipart|L627] 2025-01-06T20:41:57+0500: Calling on_field_start with no data
+[DEBUG|multipart|L624] 2025-01-06T20:41:57+0500: Calling on_field_name with data[20:28]
+[DEBUG|multipart|L624] 2025-01-06T20:41:57+0500: Calling on_field_data with data[29:48]
+[DEBUG|multipart|L627] 2025-01-06T20:41:57+0500: Calling on_field_end with no data
+[DEBUG|multipart|L627] 2025-01-06T20:41:57+0500: Calling on_field_start with no data
+[DEBUG|multipart|L624] 2025-01-06T20:41:57+0500: Calling on_field_name with data[49:57]
+[DEBUG|multipart|L624] 2025-01-06T20:41:57+0500: Calling on_field_data with data[58:61]
+[DEBUG|multipart|L627] 2025-01-06T20:41:57+0500: Calling on_field_end with no data
+[DEBUG|multipart|L627] 2025-01-06T20:41:57+0500: Calling on_end with no data
+[DEBUG|bcrypt|L625] 2025-01-06T20:41:58+0500: detected 'bcrypt' backend, version '3.2.2'
+[DEBUG|bcrypt|L406] 2025-01-06T20:41:58+0500: 'bcrypt' backend lacks $2$ support, enabling workaround
+[DEBUG|multipart|L627] 2025-01-06T21:01:29+0500: Calling on_field_start with no data
+[DEBUG|multipart|L624] 2025-01-06T21:01:29+0500: Calling on_field_name with data[0:10]
+[DEBUG|multipart|L624] 2025-01-06T21:01:29+0500: Calling on_field_data with data[11:19]
+[DEBUG|multipart|L627] 2025-01-06T21:01:29+0500: Calling on_field_end with no data
+[DEBUG|multipart|L627] 2025-01-06T21:01:29+0500: Calling on_field_start with no data
+[DEBUG|multipart|L624] 2025-01-06T21:01:29+0500: Calling on_field_name with data[20:28]
+[DEBUG|multipart|L624] 2025-01-06T21:01:29+0500: Calling on_field_data with data[29:48]
+[DEBUG|multipart|L627] 2025-01-06T21:01:29+0500: Calling on_field_end with no data
+[DEBUG|multipart|L627] 2025-01-06T21:01:29+0500: Calling on_field_start with no data
+[DEBUG|multipart|L624] 2025-01-06T21:01:29+0500: Calling on_field_name with data[49:57]
+[DEBUG|multipart|L624] 2025-01-06T21:01:29+0500: Calling on_field_data with data[58:61]
+[DEBUG|multipart|L627] 2025-01-06T21:01:29+0500: Calling on_field_end with no data
+[DEBUG|multipart|L627] 2025-01-06T21:01:29+0500: Calling on_end with no data
+[DEBUG|bcrypt|L625] 2025-01-06T21:01:29+0500: detected 'bcrypt' backend, version '3.2.2'
+[DEBUG|bcrypt|L406] 2025-01-06T21:01:29+0500: 'bcrypt' backend lacks $2$ support, enabling workaround
+[ERROR|main|L62] 2025-01-06T21:06:06+0500: http://localhost:8000/snippets/shared/c74a089f-a80d-427d-a66e-30a82370d427 | Error in application: name 'select' is not defined
+[ERROR|main|L62] 2025-01-06T21:06:18+0500: http://localhost:8000/snippets/shared/c74a089f-a80d-427d-a66e-30a82370d427 | Error in application: name 'select' is not defined
+[ERROR|main|L62] 2025-01-06T21:07:41+0500: http://localhost:8000/snippets/shared/c74a089f-a80d-427d-a66e-30a82370d427 | Error in application: name 'Snippet' is not defined
+[ERROR|main|L62] 2025-01-06T21:08:00+0500: http://localhost:8000/snippets/shared/5d905e13-2b39-43a7-bb0e-b5658a93d474 | Error in application: name 'Snippet' is not defined

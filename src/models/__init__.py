@@ -8,5 +8,6 @@ __all__ = [
     "ShortedUrl",
     "User",
     "Role",
+    'Snippet',
 
 ]

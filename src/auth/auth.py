@@ -43,6 +43,7 @@ def create_access_token(data: dict, expires_delta: timedelta = timedelta(minutes
     # копируем исходные данные, чтобы случайно их не испортить
     to_encode = data.copy()
 
+
     # устанавливаем временной промежуток жизни токена
     expire = timegm((datetime.utcnow() + expires_delta).utctimetuple())
 
@@ -114,12 +115,13 @@ async def get_current_user(token: str = Depends(oauth2_bearer)):
     )
     try:
         payload = jwt.decode(token, JWT_SECRET, algorithms=[ALGORITHM])
-        user_data = {"sub": payload.get("sub")}
-        if user_data is None:
+        user_email = payload.get("sub")
+        user_role = payload.get("role")
+        if user_email is None or user_role is None:
             raise credentials_exception
     except JWTError:
         raise credentials_exception
-    return user_data
+    return {"email": user_email, "role": user_role}
 
 
 user_dependency = Annotated[Dict, Depends(get_current_user)]
@@ -127,6 +129,7 @@ user_dependency = Annotated[Dict, Depends(get_current_user)]
 
 def has_role(required_role: List[str]):
     def role_checker(current_user: user_dependency):
+
         if current_user["role"] not in required_role:
             raise HTTPException(
                 status_code=status.HTTP_403_FORBIDDEN,

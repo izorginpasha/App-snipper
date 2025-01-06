@@ -1,0 +1,71 @@
+[DEBUG|_trace|L87] 2025-01-03T20:28:16+0500: connect_tcp.started host='jsonplaceholder.typicode.com' port=443 local_address=None timeout=5.0 socket_options=None
+[DEBUG|_trace|L87] 2025-01-03T20:28:16+0500: connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x0000022291CABD40>
+[DEBUG|_trace|L87] 2025-01-03T20:28:16+0500: start_tls.started ssl_context=<ssl.SSLContext object at 0x0000022291D0CF50> server_hostname='jsonplaceholder.typicode.com' timeout=5.0
+[DEBUG|_trace|L87] 2025-01-03T20:28:17+0500: start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000222919C5BE0>
+[DEBUG|_trace|L87] 2025-01-03T20:28:17+0500: send_request_headers.started request=<Request [b'GET']>
+[DEBUG|_trace|L87] 2025-01-03T20:28:17+0500: send_request_headers.complete
+[DEBUG|_trace|L87] 2025-01-03T20:28:17+0500: send_request_body.started request=<Request [b'GET']>
+[DEBUG|_trace|L87] 2025-01-03T20:28:17+0500: send_request_body.complete
+[DEBUG|_trace|L87] 2025-01-03T20:28:17+0500: receive_response_headers.started request=<Request [b'GET']>
+[DEBUG|_trace|L87] 2025-01-03T20:28:17+0500: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 03 Jan 2025 15:28:16 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Report-To', b'{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1735751446&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=OKq089YkgYJc9%2F3FgWQgR9oNE123NKruqLMfleuTPTo%3D"}]}'), (b'Reporting-Endpoints', b'heroku-nel=https://nel.heroku.com/reports?ts=1735751446&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=OKq089YkgYJc9%2F3FgWQgR9oNE123NKruqLMfleuTPTo%3D'), (b'Nel', b'{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'), (b'X-Powered-By', b'Express'), (b'X-Ratelimit-Limit', b'1000'), (b'X-Ratelimit-Remaining', b'998'), (b'X-Ratelimit-Reset', b'1735751502'), (b'Vary', b'Origin, Accept-Encoding'), (b'Access-Control-Allow-Credentials', b'true'), (b'Cache-Control', b'max-age=43200'), (b'Pragma', b'no-cache'), (b'Expires', b'-1'), (b'X-Content-Type-Options', b'nosniff'), (b'Etag', b'W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"'), (b'Via', b'1.1 vegur'), (b'CF-Cache-Status', b'HIT'), (b'Age', b'28089'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8fc404893d48c3ea-WAW'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'server-timing', b'cfL4;desc="?proto=TCP&rtt=14620&min_rtt=14569&rtt_var=5500&sent=4&recv=6&lost=0&retrans=0&sent_bytes=2841&recv_bytes=782&delivery_rate=198778&cwnd=251&unsent_bytes=0&cid=75ba06cf35728a84&ts=172&x=0"')])
+[INFO|_client|L1740] 2025-01-03T20:28:17+0500: HTTP Request: GET https://jsonplaceholder.typicode.com/users/1 "HTTP/1.1 200 OK"
+[DEBUG|_trace|L87] 2025-01-03T20:28:17+0500: receive_response_body.started request=<Request [b'GET']>
+[DEBUG|_trace|L87] 2025-01-03T20:28:17+0500: receive_response_body.complete
+[DEBUG|_trace|L87] 2025-01-03T20:28:17+0500: response_closed.started
+[DEBUG|_trace|L87] 2025-01-03T20:28:17+0500: response_closed.complete
+[DEBUG|_trace|L87] 2025-01-03T20:28:17+0500: close.started
+[DEBUG|_trace|L87] 2025-01-03T20:28:17+0500: close.complete
+[DEBUG|_trace|L87] 2025-01-03T20:28:41+0500: connect_tcp.started host='jsonplaceholder.typicode.com' port=443 local_address=None timeout=5.0 socket_options=None
+[DEBUG|_trace|L87] 2025-01-03T20:28:41+0500: connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000222910FBFE0>
+[DEBUG|_trace|L87] 2025-01-03T20:28:41+0500: start_tls.started ssl_context=<ssl.SSLContext object at 0x0000022291D36350> server_hostname='jsonplaceholder.typicode.com' timeout=5.0
+[DEBUG|_trace|L87] 2025-01-03T20:28:42+0500: start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x00000222916174A0>
+[DEBUG|_trace|L87] 2025-01-03T20:28:42+0500: send_request_headers.started request=<Request [b'GET']>
+[DEBUG|_trace|L87] 2025-01-03T20:28:42+0500: send_request_headers.complete
+[DEBUG|_trace|L87] 2025-01-03T20:28:42+0500: send_request_body.started request=<Request [b'GET']>
+[DEBUG|_trace|L87] 2025-01-03T20:28:42+0500: send_request_body.complete
+[DEBUG|_trace|L87] 2025-01-03T20:28:42+0500: receive_response_headers.started request=<Request [b'GET']>
+[DEBUG|_trace|L87] 2025-01-03T20:28:43+0500: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 03 Jan 2025 15:28:42 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Report-To', b'{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1735637644&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=qtuc%2FFnKiNEhtD%2BhHGiYktZJudLWXYq2vi0OwtmlnRs%3D"}]}'), (b'Reporting-Endpoints', b'heroku-nel=https://nel.heroku.com/reports?ts=1735637644&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=qtuc%2FFnKiNEhtD%2BhHGiYktZJudLWXYq2vi0OwtmlnRs%3D'), (b'Nel', b'{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'), (b'X-Powered-By', b'Express'), (b'X-Ratelimit-Limit', b'1000'), (b'X-Ratelimit-Remaining', b'999'), (b'X-Ratelimit-Reset', b'1735637685'), (b'Vary', b'Origin, Accept-Encoding'), (b'Access-Control-Allow-Credentials', b'true'), (b'Cache-Control', b'max-age=43200'), (b'Pragma', b'no-cache'), (b'Expires', b'-1'), (b'X-Content-Type-Options', b'nosniff'), (b'Etag', b'W/"1fd-XTG63SYhaP/Uo6/vgmARnL3rpBk"'), (b'Via', b'1.1 vegur'), (b'CF-Cache-Status', b'REVALIDATED'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8fc40528abdfbf37-WAW'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'server-timing', b'cfL4;desc="?proto=TCP&rtt=14880&min_rtt=14577&rtt_var=5683&sent=4&recv=6&lost=0&retrans=0&sent_bytes=2840&recv_bytes=782&delivery_rate=198669&cwnd=251&unsent_bytes=0&cid=9d476f2606622507&ts=652&x=0"')])
+[INFO|_client|L1740] 2025-01-03T20:28:43+0500: HTTP Request: GET https://jsonplaceholder.typicode.com/users/2 "HTTP/1.1 200 OK"
+[DEBUG|_trace|L87] 2025-01-03T20:28:43+0500: receive_response_body.started request=<Request [b'GET']>
+[DEBUG|_trace|L87] 2025-01-03T20:28:43+0500: receive_response_body.complete
+[DEBUG|_trace|L87] 2025-01-03T20:28:43+0500: response_closed.started
+[DEBUG|_trace|L87] 2025-01-03T20:28:43+0500: response_closed.complete
+[DEBUG|_trace|L87] 2025-01-03T20:28:43+0500: close.started
+[DEBUG|_trace|L87] 2025-01-03T20:28:43+0500: close.complete
+[ERROR|main|L95] 2025-01-03T20:33:58+0500: http://localhost:8000/user/2 | Error in application: name 'select' is not defined
+[ERROR|main|L104] 2025-01-03T20:33:58+0500: Error occurred: http://localhost:8000/user/2 - name 'JSONResponse' is not defined
+[ERROR|main|L95] 2025-01-03T20:34:15+0500: http://localhost:8000/user/2 | Error in application: name 'select' is not defined
+[ERROR|main|L104] 2025-01-03T20:34:15+0500: Error occurred: http://localhost:8000/user/2 - name 'JSONResponse' is not defined
+[ERROR|main|L95] 2025-01-03T20:34:18+0500: http://localhost:8000/user/2 | Error in application: name 'select' is not defined
+[ERROR|main|L104] 2025-01-03T20:34:18+0500: Error occurred: http://localhost:8000/user/2 - name 'JSONResponse' is not defined
+[WARNING|bcrypt|L622] 2025-01-05T13:05:24+0500: (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\ACER\PycharmProjects\App-snipper\.venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+[DEBUG|bcrypt|L625] 2025-01-05T13:05:24+0500: detected 'bcrypt' backend, version '<unknown>'
+[DEBUG|bcrypt|L406] 2025-01-05T13:05:24+0500: 'bcrypt' backend lacks $2$ support, enabling workaround
+[WARNING|bcrypt|L622] 2025-01-05T13:07:24+0500: (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\ACER\PycharmProjects\App-snipper\.venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+[DEBUG|bcrypt|L625] 2025-01-05T13:07:24+0500: detected 'bcrypt' backend, version '<unknown>'
+[DEBUG|bcrypt|L406] 2025-01-05T13:07:24+0500: 'bcrypt' backend lacks $2$ support, enabling workaround
+[DEBUG|bcrypt|L625] 2025-01-05T13:08:27+0500: detected 'bcrypt' backend, version '3.2.2'
+[DEBUG|bcrypt|L406] 2025-01-05T13:08:27+0500: 'bcrypt' backend lacks $2$ support, enabling workaround
+[DEBUG|multipart|L627] 2025-01-05T13:16:27+0500: Calling on_field_start with no data
+[DEBUG|multipart|L624] 2025-01-05T13:16:27+0500: Calling on_field_name with data[0:10]
+[DEBUG|multipart|L624] 2025-01-05T13:16:27+0500: Calling on_field_data with data[11:19]
+[DEBUG|multipart|L627] 2025-01-05T13:16:27+0500: Calling on_field_end with no data
+[DEBUG|multipart|L627] 2025-01-05T13:16:27+0500: Calling on_field_start with no data
+[DEBUG|multipart|L624] 2025-01-05T13:16:27+0500: Calling on_field_name with data[20:28]
+[DEBUG|multipart|L624] 2025-01-05T13:16:27+0500: Calling on_field_data with data[29:31]
+[DEBUG|multipart|L627] 2025-01-05T13:16:27+0500: Calling on_field_end with no data
+[DEBUG|multipart|L627] 2025-01-05T13:16:27+0500: Calling on_field_start with no data
+[DEBUG|multipart|L624] 2025-01-05T13:16:27+0500: Calling on_field_name with data[32:40]
+[DEBUG|multipart|L624] 2025-01-05T13:16:27+0500: Calling on_field_data with data[41:44]
+[DEBUG|multipart|L627] 2025-01-05T13:16:27+0500: Calling on_field_end with no data
+[DEBUG|multipart|L627] 2025-01-05T13:16:27+0500: Calling on_end with no data
